@@ -4,14 +4,12 @@ puts "Exercise 1"
 puts "----------"
 
 # Your code goes below here ...
-class Store 
-end
+# class Store 
+# end
 store_1 = Store.create(name: 'Burnaby', annual_revenue: 300000, mens_apparel: true, womens_apparel: true)
 
 store_2 = Store.create(name: 'Richmond', annual_revenue: 1260000, mens_apparel: false, womens_apparel: true)
 
 store_3 = Store.create(name: 'Gastown', annual_revenue: 190000, mens_apparel: true, womens_apparel: false)
 
-puts store_1.count
-puts store_2.count
-puts store_3.count
+puts Store.all.count
